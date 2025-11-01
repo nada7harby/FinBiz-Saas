@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 95%;;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 84 81% 44%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 84 81% 60%;
+
+    --secondary: 0 0 74%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 84 81% 44%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 84 81% 44%;
+
+    --radius: 1rem;
+
+    --chart-1: 84 81% 44%;
+    --chart-2: 197 100% 48%;
+    --chart-3: 346 77% 50%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+
+ --dynamicBorder: 255 13% 13% / 1;
+;
+    --container-bg: 0 0% 96%;
+    --container-text: 0 0% 12%;
+
+    --gradient-glow: linear-gradient(
+      180deg,
+      rgba(132, 204, 22, 0.15) 0%,
+      rgba(132, 204, 22, 0) 100%
+    );
+    --shadow-glow: 0 0 40px rgba(132, 204, 22, 0.3);
+  }
+
+  .dark {
+    --background: 0 0% 6% / 1;
+    --foreground: 0 0% 98%;
+
+    --card: 240 8% 7%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 84 81% 44%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 84 81% 60%;
+
+    --secondary: 0 0 20%;
+    --secondary-foreground: 0 0% 98%;
+
+     --muted: 255 7% 12%;;;
+    --muted-foreground: 0 0% 100%; 
+
+    --accent: 84 81% 44%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 84 81% 44%;
+
+    --chart-1: 84 81% 44%;
+    --chart-2: 197 100% 48%;
+    --chart-3: 346 77% 50%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+   --dynamicBorder: 80 71% 52% / 1;
+    --container-bg: 0 0% 12%;
+    --container-text: 0 0% 96%;
+    --gradient-glow: linear-gradient(
+      180deg,
+      rgba(132, 204, 22, 0.2) 0%,
+      rgba(132, 204, 22, 0) 100%
+    );
+    --shadow-glow: 0 0 60px rgba(132, 204, 22, 0.4);
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    /* Smooth color transitions when theme changes */
+    transition: background-color 0.3s ease, color 0.3s ease,
+      border-color 0.3s ease;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+  }
+}

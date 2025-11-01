@@ -1,0 +1,8 @@
+/* Design tokens — ألوان، خطوط، مسافات */
+:root {
+  --color-primary: #646cff; /* اللون الرئيسي */
+  --color-bg: #ffffff;
+  --radius-sm: 6px;
+  --space-1: 4px;
+  --space-2: 8px;
+}
