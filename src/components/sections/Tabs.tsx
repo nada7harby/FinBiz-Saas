@@ -23,11 +23,12 @@ export function Tabs() {
             <button
               key={link}
               className="
-                px-2 sm:px-3 md:px-5 
-                py-2 rounded-full 
+                sm:px-3 md:px-5 
+                    h-9 sm:h-10 md:h-12 
+            px-4 sm:px-6 md:px-8 rounded-full 
                 text-xs sm:text-sm md:text-base font-medium 
-                text-foreground
-                hover:bg-[#A3DC2F33] hover:text-white 
+                text-foreground 
+                hover:bg-foreground hover:text-background 
                 transition-colors whitespace-nowrap
               "
             >
@@ -41,7 +42,7 @@ export function Tabs() {
             h-9 sm:h-10 md:h-12 
             px-4 sm:px-6 md:px-8
             bg-white text-black 
-            hover:bg-foreground hover:text-white
+            hover:bg-foreground hover:text-background
             shadow-lg shadow-primary/20 
             rounded-full whitespace-nowrap
           "
