@@ -1,6 +1,7 @@
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { FaTwitter, FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa";
+import logo from "../../assets/images/logo.png";
 
 const footerLinks = {
   Company: ["Products", "Services", "Analytics"],
@@ -13,12 +14,10 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-                <span className="text-lg font-bold text-primary-foreground">F</span>
-              </div>
-              <span className="text-xl font-bold">FinBiz</span>
-            </div>
+            <div className="flex items-center gap-3">
+            <img src={logo} alt="FinBiz Logo" className="h-8 w-8 object-contain" />
+            <span className="text-xl font-bold">FinBiz</span>
+          </div>
             <p className="text-sm text-textF">
               Finance FinBiz is a 100% of software company and fully accessible the best platforms for your finance easy.
             </p>
