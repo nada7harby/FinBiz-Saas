@@ -47,7 +47,7 @@ export function PricingSection() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
             Find the right plan
           </h2>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-textP max-w-3xl mx-auto">
             Invest in your company's future with our comprehensive financial
             solution. Contact us for pricing details and see how we can help you
             streamline your finances and reach your business goals.
@@ -86,22 +86,22 @@ export function PricingSection() {
 >
   {plan.name}
 </h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <p className="text-sm text-textP mb-4">
                   {plan.description}
                 </p>
                 <div className="flex items-baseline gap-1 justify-center py-6">
                   <span className="text-4xl sm:text-5xl font-bold">
                     ${plan.price}
-                  </span>
+                  </span> 
                   <span className="text-muted-foreground">{plan.period}</span>
                 </div>
               </div>
 
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-4 mb-8 flex flex-col justify-start h-80">
                 {plan.features?.map((feature, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground leading-snug">
+                    <span className="text-sm text-foreground leading-snug">
                       {feature}
                     </span>
                   </li>

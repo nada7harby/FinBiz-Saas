@@ -184,7 +184,7 @@ export default function FeaturesSection() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
-              className="bg-card border border-border rounded-3xl p-6 sm:p-8"
+              className="bg-card border border-border rounded-3xl sm:p-8  px-6 pt-6 pb-0 sm:px-8 sm:pt-8 sm:pb-0"
             >
               <h3 className="text-xl sm:text-2xl font-bold mb-3">
                 Real-time accounting at your fingertips.
@@ -206,7 +206,7 @@ export default function FeaturesSection() {
                   </div>
                 </div>
 
-                <div className="flex-1 w-full">
+                <div className="flex-1 w-full pb-6 sm:pb:8">
                   <div className="text-sm font-semibold text-center mb-4">
                     Monthly Invoice
                   </div>
@@ -245,18 +245,19 @@ export default function FeaturesSection() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
-              className="bg-card border border-border rounded-3xl p-6 sm:p-8 flex flex-col justify-between"
+              className="bg-card border border-border rounded-3xl lg:px-[48px] lg:py-[52px] sm:p-8 flex flex-col justify-between"
             >
-              <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-bold leading-tight mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 w-[541px]">
                 Optimise expense management as a team
               </h2>
-              <p className="text-muted-foreground text-base sm:text-lg lg:text-[22px] mb-8 leading-relaxed">
-                Bring harmony to team expenses with budget limits and real-time
-                monitoring.
+<p className="text-textP text-base sm:text-lg lg:text-[22px] mb-8 leading-relaxed sm:leading-loose lg:leading-[1.8]">
+             Bring harmony to team expenses with budget limits and
+             real-time monitoring. Freedom for your staff. Peace of
+             mind for you.
               </p>
               <Button
                 size="lg"
-                className="w-full sm:w-fit px-8 bg-background hover:bg-muted text-foreground border border-border rounded-full"
+                className="w-full sm:w-fit px-8 bg-foreground hover:bg-foreground text-background border border-border rounded-full"
               >
                 Explore more
               </Button>

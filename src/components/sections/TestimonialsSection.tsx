@@ -96,7 +96,7 @@ const [theme, setTheme] = useState<"light" | "dark">(
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             What are people saying
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-textP max-w-3xl mx-auto">
             Thank you for your testimonial. Our clients are incredibly special
             to us and one comment or a great review can easily brighten our day
             and make all our efforts feel so well!
@@ -115,24 +115,22 @@ const [theme, setTheme] = useState<"light" | "dark">(
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3 }}
-                className="bg-card rounded-2xl p-8 border border-border shadow-card transition-all duration-300 w-[660px] flex-shrink-0"
+                className="bg-card rounded-2xl p-8 border border-border shadow-card transition-all duration-300 w-[660px] h-[313px] flex-shrink-0"
               >
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-6 leading-relaxed text-2xl w-[515px]">
                   "{testimonial.feedback}"
                 </p>
 
-                <div className="flex justify-between">
+                <div className="flex justify-between pt-[45px]">
                   <div className="flex items-center gap-3">
                     <img
                       src={`${testimonial.img}`}
                       alt={testimonial.name}
-                      className="w-12 h-12 rounded-full object-cover"
+                      className="w-[60px] h-[60px] rounded-full object-cover "
                     />
                     <div>
-                      <p className="font-semibold">{testimonial.name}</p>
-                      <p className="text-sm text-muted-foreground mb-2">
-                        {testimonial.role}
-                      </p>
+                      <p className="font-semibold text-2xl">{testimonial.name}</p>
+                      
                       <div className="flex gap-1">
                         {[...Array(testimonial.rating)].map((_, i) => (
                           <Star

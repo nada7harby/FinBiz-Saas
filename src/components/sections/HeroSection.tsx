@@ -49,7 +49,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
+            className="text-lg sm:text-xl text-textP mb-8 max-w-2xl mx-auto"
           >
             Empower your finance with this modern software's efficiency and experience of small and medium-sized business.
           </motion.p>

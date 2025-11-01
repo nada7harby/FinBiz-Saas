@@ -61,6 +61,8 @@
       rgba(132, 204, 22, 0) 100%
     );
     --shadow-glow: 0 0 40px rgba(132, 204, 22, 0.3);
+    --textF: 0 4% 71% / 1;
+    --textP: 0 0% 20% / 1;
   }
 
   .dark {
@@ -100,6 +102,9 @@
     --chart-5: 27 87% 67%;
 
    --dynamicBorder: 80 71% 52% / 1;
+   --textF: 0 4% 71% / 1;
+   --textP: 230 3% 62% / 1;
+
     --container-bg: 0 0% 12%;
     --container-text: 0 0% 96%;
     --gradient-glow: linear-gradient(

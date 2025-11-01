@@ -56,6 +56,8 @@ export default {
           "5": "hsl(var(--chart-5))",
         },
           dynamicBorder: "hsl(var(--dynamicBorder))",
+           textF: "hsl(var(--textF))",
+           textP: "hsl(var(--textP))",
 
       },
       boxShadow: {
