@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { BarChart3, TrendingUp, DollarSign } from "lucide-react";
+import { BarChart3, TrendingUp, DollarSign, ArrowRight } from "lucide-react";
 import photo from "../../assets/images/photo.png";
 import photo2 from "../../assets/images/photo2.png";
 import photo3 from "../../assets/images/photo3.png";
@@ -31,7 +31,7 @@ export function HeroSection() {
             className="inline-flex items-center gap-2 px-[8px]  py-[4px] rounded-full border-t border-l border-r border-[#3B3B3B] bg-baground/100 text-sm font-medium mb-6"
           >
             <span className="pl-[8px] pr-[4px] py-[4px] rounded-full bg-primary text-white" >New</span>
-          <span className="text-dynamicBorder">  Introducing AI Automation</span>
+          <span className="text-dynamicBorder flex">  Introducing AI Automation <ArrowRight  className="pl-[6px]" /></span>
           </motion.div>
 
           <motion.h1
@@ -54,27 +54,50 @@ export function HeroSection() {
             Empower your finance with this modern software's efficiency and experience of small and medium-sized business.
           </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-            className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-8"
-          >
-            <Input
-              type="email"
-              placeholder="Enter your email..."
-              className="h-12 bg-card border-border"
-            />
-            <Button size="lg" className="h-12 -ml-10 px-8 shadow-lg shadow-primary/20 bg-foreground text-background hover:bg-foreground rounded-full">
-             Book Demo
-            </Button>
-          </motion.div>
+        <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.5 }}
+  className="flex items-center justify-between  bg-BgInput rounded-full max-w-lg mx-auto px-2 py-1"
+>
+  <Input
+    type="email"
+    placeholder="Enter your email adress"
+    className="
+      bg-transparent
+      text-gray-300
+      placeholder:text-gray-500
+      border-none
+      focus-visible:ring-0
+      focus-visible:ring-offset-0
+      flex-1
+      h-12
+      px-4
+    "
+  />
+  <Button
+    size="lg"
+    className="
+      h-12
+      bg-foreground
+      text-background
+      font-medium
+      rounded-full
+      px-6
+      hover:bg-gray-200
+      transition
+    "
+  >
+    Book a Demo
+  </Button>
+</motion.div>
+
 
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
-            className="flex items-center justify-center flex-col  gap-2 mb-16"
+            className="flex items-center justify-center flex-col  gap-2 mb-16 mt-12"
           >
             <div className="flex -space-x-2">
           {images.map((img, index) => (
@@ -87,7 +110,7 @@ export function HeroSection() {
       ))}
             </div>
             
-            <span className="text-sm text-muted-foreground " > 10,000+ reviews</span>
+            <span className="text-sm text-bold text-textP " >1,200+ reviews (4.9 of 5)</span>
           </motion.div>         
         </motion.div>
       </div>

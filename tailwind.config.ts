@@ -58,6 +58,8 @@ export default {
           dynamicBorder: "hsl(var(--dynamicBorder))",
            textF: "hsl(var(--textF))",
            textP: "hsl(var(--textP))",
+           BgLine: "hsl(var(--BgLine))",
+           BgInput: "hsl(var(--BgInput))",
 
       },
       boxShadow: {

@@ -197,8 +197,9 @@ export default function FeaturesSection() {
               <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-8">
                 <div className="bg-muted p-4 rounded-xl flex-1">
                   <div className="text-3xl sm:text-5xl font-bold mb-8">
-                    $<CountUp end={3453.0} duration={2} separator="," decimals={2} />
+                    $<CountUp end={3453.0} duration={2} separator="" decimals={2} />
                   </div>
+                  <div className="relative w-[115%] h-[1.5px] -top-[20px] bg-BgLine rounded"></div>
                   <div className="space-y-2">
                     <div className="h-2 bg-secondary rounded-full w-3/4" />
                     <div className="h-2 bg-secondary rounded-full w-3/4" />

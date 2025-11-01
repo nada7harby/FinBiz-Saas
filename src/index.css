@@ -51,7 +51,9 @@
 
 
  --dynamicBorder: 255 13% 13% / 1;
-;
+   --BgLine: 255 7% 12% / 1;
+   --BgInput: 0 0% 100% / 1;
+
     --container-bg: 0 0% 96%;
     --container-text: 0 0% 12%;
 
@@ -104,6 +106,8 @@
    --dynamicBorder: 80 71% 52% / 1;
    --textF: 0 4% 71% / 1;
    --textP: 230 3% 62% / 1;
+   --BgLine: 255 7% 12% / 1;
+   --BgInput: 0 0% 14% / 1;
 
     --container-bg: 0 0% 12%;
     --container-text: 0 0% 96%;
