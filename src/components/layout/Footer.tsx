@@ -102,7 +102,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          © Copyright 2025 FinBiz. All rights reserved.
+          © Copyright 2024 FinBiz. All rights reserved.
         </div>
       </div>
     </footer>
