@@ -246,9 +246,9 @@ export default function FeaturesSection() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
-              className="bg-card border border-border rounded-3xl lg:px-[48px] lg:py-[52px] sm:p-8 flex flex-col justify-between"
+              className="bg-card border border-border rounded-3xl lg:px-[48px] lg:py-[52px] p-8 flex flex-col justify-between"
             >
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 w-[541px]">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 lg:w-[541px]">
                 Optimise expense management as a team
               </h2>
 <p className="text-textP text-base sm:text-lg lg:text-[22px] mb-8 leading-relaxed sm:leading-loose lg:leading-[1.8]">
