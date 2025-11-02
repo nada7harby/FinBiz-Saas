@@ -52,7 +52,7 @@ export default function FeaturesSection() {
     return <p className="text-center py-20">Loading data...</p>;
 
   return (
-    <section id="features" className="py-16 sm:py-20 px-4 sm:px-6 bg-background">
+    <section id="features" className="py-16 sm:py-20 px-4 sm:px-6 ">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -67,7 +67,7 @@ export default function FeaturesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="bg-card border border-border rounded-3xl p-6 sm:p-8"
+              className="bg-card   border border-border rounded-3xl p-6 sm:p-8"
             >
               <h3 className="text-lg sm:text-xl font-bold mb-2">
                 Simple analytics
@@ -189,7 +189,7 @@ export default function FeaturesSection() {
               <h3 className="text-xl sm:text-2xl font-bold mb-3">
                 Real-time accounting at your fingertips.
               </h3>
-              <p className="text-sm text-muted-foreground mb-8 sm:mb-10">
+              <p className="text-sm text-textF mb-8 sm:mb-10">
                 Take the pain out of book keeping! Wave goodbye to mountains of
                 paperwork and endless email reminders.
               </p>
@@ -207,15 +207,15 @@ export default function FeaturesSection() {
                   </div>
                 </div>
 
-                <div className="flex-1 w-full pb-6 sm:pb:8">
-                  <div className="text-sm font-semibold text-center mb-4">
+                <div className="flex-1 w-full pb-6 sm:pb:8 pt-4 px-4 bg-muted/30 rounded-xl">
+                  <div className="text-sm font-semibold text-start mb-4 ">
                     Monthly Invoice
                   </div>
                   <div className="space-y-3">
                     {invoices.map((invoice, index) => (
                       <div
                         key={index}
-                        className="flex items-center gap-3 p-3 rounded-xl bg-muted/30"
+                        className="flex items-center gap-1 py-3  "
                       >
                         <div
                           className="w-10 h-10 rounded-full flex items-center justify-center"
@@ -228,7 +228,7 @@ export default function FeaturesSection() {
                           />
                         </div>
                         <div className="flex-1">
-                          <span className="text-sm">{invoice.name}</span>
+                          <span className="text-sm block mb-2">{invoice.name}</span>
                           <div className="h-2 bg-secondary rounded-full w-3/4 mt-1" />
                         </div>
                         <button className="text-muted-foreground hover:text-foreground">

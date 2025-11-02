@@ -33,9 +33,9 @@ export function CtaSection() {
                   Request Demo
                 </Button>
                 <Button
-                  variant="outline"
+                 
                   size="lg"
-                  className="w-full sm:w-auto"
+                  className="w-full sm:w-auto bg-foreground text-background rounded-full text-background hover:bg-foreground/90 shadow-lg shadow-primary/20"
                 >
                   Watch Video
                 </Button>

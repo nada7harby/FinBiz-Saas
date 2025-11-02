@@ -10,7 +10,7 @@ const footerLinks = {
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-card">
+    <footer className="border-t border-border bg-background/80 backdrop-blur-lg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
@@ -31,7 +31,7 @@ export function Footer() {
   <a
     key={i}
     href={href}
-    className={`w-10 h-10 rounded-full bg-neutral-700 flex items-center justify-center text-white/50 hover:text-white transition-all duration-300 ${hoverColor}`}
+    className={`w-10 h-10 rounded-full bg-muted flex items-center justify-center text-foreground hover:text-white transition-all duration-300 ${hoverColor}`}
   >
     <Icon className="w-5 h-5" />
   </a>

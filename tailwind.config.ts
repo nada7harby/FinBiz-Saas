@@ -60,6 +60,7 @@ export default {
            textP: "hsl(var(--textP))",
            BgLine: "hsl(var(--BgLine))",
            BgInput: "hsl(var(--BgInput))",
+           bgBody: "hsl(var(--bgBody))",
 
       },
       boxShadow: {

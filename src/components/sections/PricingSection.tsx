@@ -100,7 +100,7 @@ export function PricingSection() {
               <ul className="space-y-4 mb-8 flex flex-col justify-start h-80">
                 {plan.features?.map((feature, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                    <Check className="w-5 h-5 text-foreground mt-0.5 flex-shrink-0" />
                     <span className="text-sm text-foreground leading-snug">
                       {feature}
                     </span>
@@ -116,7 +116,7 @@ export function PricingSection() {
       : plan.name === "Pro"
       ? "bg-foreground text-background hover:bg-foreground/90"
       : plan.name === "Enterprise"
-      ? "bg-[#A3DC2F] text-white hover:bg-[#A3DC2F]/90"
+      ? "bg-[#A3DC2F] text-black hover:bg-[#A3DC2F]/90"
       : "bg-popover text-secondary-foreground hover:bg-secondary/80"
   }`}
 >

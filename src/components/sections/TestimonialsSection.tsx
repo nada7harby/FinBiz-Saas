@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Star, ChevronLeft, ChevronRight, MessageSquare } from "lucide-react";
+import { Star, ChevronLeft, ChevronRight, MessageSquare, ArrowRight, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useRef, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
@@ -156,14 +156,14 @@ const [theme, setTheme] = useState<"light" | "dark">(
               onClick={scrollPrev}
               className="rounded-full"
             >
-              <ChevronLeft className="w-5 h-5" />
+              <ArrowLeft className="w-5 h-5" />
             </Button>
             <Button
               size="icon"
               onClick={scrollNext}
               className="rounded-full bg-primary"
             >
-              <ChevronRight className="w-5 h-5 text-black" />
+              <ArrowRight className="w-5 h-5 text-black" />
             </Button>
           </div>
         </div>
