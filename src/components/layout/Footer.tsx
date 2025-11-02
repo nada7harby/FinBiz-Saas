@@ -66,7 +66,7 @@ export function Footer() {
       type="email"
       placeholder="Enter email address"
       className="
-        bg-[#222] 
+        bg-BgInput
         text-white 
         h-12 
         rounded-l-xl 
