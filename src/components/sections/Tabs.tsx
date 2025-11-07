@@ -13,7 +13,7 @@ export function Tabs() {
           rounded-full border border-[#FFFFFF1A]
           shadow-[0_0_20px_rgba(255,255,255,0.05)]
           backdrop-blur-md
-          bg-background/40
+          bg-background/60
           mx-auto w-fit
           overflow-x-auto scrollbar-hide
         "
