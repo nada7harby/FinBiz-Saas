@@ -1,7 +1,7 @@
 import { Button } from "../ui/button";
 
 export function Tabs() {
-  const navLinks = ["Products", "Pages", "Integration", "Blog", "Pricing"];
+  const navLinks = ["Products", "Integration", "Demo", "Pricing"];
 
   return (
     <div className="flex justify-center items-center w-full px-4 sm:px-6 lg:px-0">
