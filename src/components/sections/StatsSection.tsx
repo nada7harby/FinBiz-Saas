@@ -131,7 +131,6 @@ console.log(data);
             viewport={{ once: true }}
             className="lg:col-span-3 bg-card border border-border rounded-2xl p-6"
           >
-            <h3 className="text-lg font-semibold mb-6">Employee</h3>
             <div className="space-y-6">
               {employeeCategories.map((category, index) => (
                 <div key={category.id || category.label} className="space-y-3">

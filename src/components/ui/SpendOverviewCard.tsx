@@ -38,20 +38,24 @@ export function SpendOverviewCard({ data }: { data: any[] }) {
             </linearGradient>
           </defs>
           <CartesianGrid strokeDasharray="3 3" stroke="#2A2A2C" />
-          <XAxis
+         <XAxis
             dataKey="time"
-            stroke="#ffffffff"
+            stroke="#666"
             tick={{
-              fill: '#666',
+              fill: "#4F4F4F",
               fontSize: 12,
             }}
+            axisLine={false}
+            tickLine={false}
           />
           <YAxis
-            stroke="#ffffffff"
+            stroke="#666666"
             tick={{
-              fill: '#666',
+              fill: "#4F4F4F",
               fontSize: 12,
             }}
+            axisLine={false}
+            tickLine={false}
           />
           <Tooltip
             contentStyle={{
